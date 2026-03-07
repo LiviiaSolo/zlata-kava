@@ -1408,6 +1408,80 @@ header {
   box-shadow: 0 4px 14px rgba(212, 166, 90, 0.35);
 }
 
+/* Chrome, Safari, Edge */
+.reservation-form input[type="date"]::-webkit-calendar-picker-indicator,
+.reservation-form input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.reservation-form input[type="date"]::-webkit-calendar-picker-indicator:hover,
+.reservation-form input[type="time"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+.reservation-form input[type="date"],
+.reservation-form input[type="time"] {
+  -moz-appearance: textfield;
+  position: relative;
+  padding-right: 40px;
+}
+
+/* Vlastné ikony */
+.reservation-form input[type="date"] {
+  background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10h5v5H7z"/><path d="M3 4h18v18H3z" fill="none"/></svg>') no-repeat right 12px center;
+  background-size: 20px 20px;
+}
+
+.reservation-form input[type="time"] {
+  background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7v5l3 3"/></svg>') no-repeat right 12px center;
+  background-size: 20px 20px;
+}
+
+/* Skrytie štandardných záložiek v prehliadačoch Chrome,
+Safari a Edge*/
+.reservation-form input[type="date"]::-webkit-inner-spin-button,
+.reservation-form input[type="date"]::-webkit-clear-button,
+.reservation-form input[type="time"]::-webkit-inner-spin-button,
+.reservation-form input[type="time"]::-webkit-clear-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Skrytie predvolenej ikony kalendára/hodín vo WebKite */
+.reservation-form input[type="date"]::-webkit-calendar-picker-indicator,
+.reservation-form input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Firefox – odstránená predvolená ikona */
+.reservation-form input[type="date"],
+.reservation-form input[type="time"] {
+  -moz-appearance: textfield;
+  position: relative;
+  padding-right: 40px;
+}
+
+/* Pridané biele SVG ikony */
+.reservation-form input[type="date"] {
+  background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10h5v5H7z"/><path d="M3 4h18v18H3z" fill="none"/></svg>') no-repeat right 12px center;
+  background-size: 20px 20px;
+}
+
+.reservation-form input[type="time"] {
+  background: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7v5l3 3"/></svg>') no-repeat right 12px center;
+  background-size: 20px 20px;
+}
+
 @media (max-width:480px) {
   .reservation-modal-content {
     padding: 35px 25px;

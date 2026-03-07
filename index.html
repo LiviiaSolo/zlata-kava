@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="sk"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlatá Káva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&family=Merienda:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header / navbar -->
+  <header id="home" class="home">
+    <nav class="navbar section__content">
+    
+      <a href="#" class="nav-logo">
+        <img class="logo-img" src="./images/logo-coffee.png" alt="">
+        <span class="logo-text"><span>Zlatá</span> Káva</span>
+      </a>
+
+      <ul class="nav__menu">
+        <li class="menu-close">
+          <button id="menu-close-button">✕</button>
+        </li>
+      
+        <!-- Logo in mobile menu -->
+        <li class="nav-logo-mobile">
+          <span class="logo-text"><span>Zlatá</span> Káva</span>
+        </li>
+      
+        <li class="nav__item"><a href="#about" class="nav__link">O nás</a></li>
+        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="#gallery" class="nav__link">Offer</a></li>
+        <li class="nav__item"><a href="#testimonials" class="nav__link">Reviews</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+      </ul>
+    
+      <button id="menu-open-button" class="menu-open">☰</button>    
+    </nav>
+  </header>
+
+  
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-container">
+
+        <div class="hero-text">
+          <p class="hero-subtitle">Boutique Coffee Experience</p>
+
+          <h1>Čas na dobrú kávu</h1>
+
+          <p class="hero-description">
+            Objavte chuť kvalitnej kávy v priestore,
+            kde sa spája elegancia a pohoda.
+          </p>
+          <div class="hero-buttons">
+            <a href="#menu" class="hero-btn">Pozrieť menu</a>
+            <a href="#reservation" class="hero-btn">Rezervovať stôl</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="images/zlatakavka.png" alt="Šálka kávy Zlatá Káva">
+        </div>
+
+      </div>
+    </section>
+
+
+
+      <!-- About us section -->
+
+  <section class="about" id="about">
+    <div class="about-container">
+
+      <div class="about-image">
+        <img src="images/about-as.png" alt="Interiér Zlatá Káva">
+      </div>
+
+      <div class="about-text">
+        <h2 class="about-title">O nás</h2>
+        <div class="about-coffee-line"></div>
+
+        <p>
+          Zlatá Káva je priestor pre pokoj, vôňu čerstvo praženej kávy 
+          a chvíľu len pre vás.
+        </p>
+
+        <p>
+          Naša Signature Coffee je výsledkom starostlivého výberu zŕn 
+          a precízneho praženia pre výnimočný chuťový zážitok.
+        </p>
+    
+      <div class="about-visit">
+        <p>
+          Pri vašej prvej návšteve vám radi ponúkneme
+          <span>-10% zľavu na celý účet.</span>
+        </p>
+        <button class="about-visit-btn discount-btn">Získajte zľavu</button>
+      </div>
+      </div>
+
+    </div>
+  </section> 
+
+
+  <!-- Discount-modal -->
+  <div class="discount-modal" id="discountModal">
+  
+    <div class="discount-content">
+  
+      <span class="discount-close">&times;</span>
+  
+      <h3>Vaša zľava -10%</h3>
+  
+      <p>
+        Pri vašej prvej návšteve získate
+        <strong>10% zľavu na celý účet.</strong>
+      </p>
+  
+      <div class="coupon-box">
+        <span id="couponCode">ZLATA10</span>
+        <button class="copy-btn" id="copyCoupon">Skopírovať kupón</button>
+      </div>
+  
+      <p class="coupon-info">
+        Ukážte tento kód pri pokladni.
+      </p>
+  
+    </div>
+  
+  </div>
+
+  <!-- Premium Section -->
+  <section class="premium-collection">
+    <div class="premium-container">
+
+      <div class="premium-header">
+        <p class="premium-label">Limitovaná edícia</p>
+        <h2>Naša výnimočná kolekcia</h2>
+          <div class="coffee-line"></div>
+        <p class="premium-text">
+          Starostlivo vybrané zrná, sezónne kombinácie chutí
+          a výnimočné spracovanie pre tých, ktorí hľadajú viac než len kávu.
+        </p>
+      </div>
+
+      <div class="premium-grid">
+
+        <div class="premium-item">
+          <span class="premium-badge">Premium</span>
+          <img src="/images/kolekcia1.png" alt="House Blend 2026">
+          <h3>Spiced Choco Mocha Royale</h3>
+          <p>
+            Espresso s horúcou čokoládou, koreninami a jemným nádychom šafranu.
+            Autorská receptúra s luxusným charakterom.
+          </p>
+          <button class="premium-btn order-btn" data-coffee="Spiced Choco Mocha Royale">Objednať</button>
+        </div>
+
+        <div class="premium-item">
+          <span class="premium-badge">Exclusive</span>
+          <img src="/images/kolekcia2.png" alt="Barrel Aged Espresso">
+          <h3>Barrel Aged Espresso</h3>
+          <p>Prémiové espresso s jemným tónom dubového dreva a tmavej čokolády. 
+            Hlboká aróma, výrazný charakter, elegantná textúra a dlhotrvajúca chuť.
+          </p>
+          <button class="premium-btn order-btn" data-coffee="Barrel Aged Espresso">Objednať</button>
+        </div>
+
+        <div class="premium-item ">
+          <span class="premium-badge">Signature</span>
+          <img src="/images/kolekcia3.png" alt="Honey Process Filter">
+          <h3>Velvet Vanilla Nitro Latte</h3>
+          <p>Krémová studená káva s jemnou vanilkovou príchuťou a azotom,
+            ktorý vytvára barхатistú penu. Jedinečný zážitok, ktorý nenájdete nikde inde.
+          </p>
+          <button class="premium-btn order-btn" data-coffee="Velvet Vanilla Nitro Latte">Objednať</button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Order-modal -->
+  <div class="order-modal" id="orderModal">
+    <div class="order-modal-content">
+  
+      <span class="order-close">&times;</span>
+  
+      <h2>Objednávka kávy</h2>
+  
+      <form class="order-form">
+        <input type="text" id="coffeeName" readonly>
+  
+        <input type="text" placeholder="Vaše meno" required>
+        <input type="tel" placeholder="Telefón" required>
+  
+        <textarea rows="4" placeholder="Poznámka k objednávke"></textarea>
+  
+        <button type="submit" class="btn-primary">Odoslať objednávku</button>
+      </form>
+  
+    </div>
+  </div>
+
+  <!-- Menu section -->
+  <section class="menu-dark" id="menu">
+    <div class="menu-dark-container">
+
+      <div class="menu-header">
+        <h2 class="menu-dark-title">Naše menu</h2>
+        
+        <div class="menu-welcome">
+          <span>-10%</span>
+          <p>na prvú návštevu</p>
+        </div>
+      </div>
+
+      <div class="menu-dark-columns">
+        
+
+        <!-- Coffee -->
+        <div class="menu-dark-category">
+          <h3>Coffee</h3>
+
+          <div class="menu-dark-item"><span>Espresso</span><span>€2.50</span></div>
+          <div class="menu-dark-item"><span>Double Espresso</span><span>€3.20</span></div>
+          <div class="menu-dark-item"><span>Cappuccino</span><span>€3.20</span></div>
+          <div class="menu-dark-item"><span>Latte</span><span>€3.50</span></div>
+          <div class="menu-dark-item"><span>Flat White</span><span>€3.80</span></div>
+          <div class="menu-dark-item"><span>Mocha</span><span>€4.00</span></div>
+          <div class="menu-dark-item"><span>Caramel Latte</span><span>€4.20</span></div>
+          <div class="menu-dark-item"><span>Iced Coffee</span><span>€3.80</span></div>
+        </div>
+
+        <!-- Tea -->
+        <div class="menu-dark-category">
+          <h3>Tea</h3>
+
+          <div class="menu-dark-item"><span>Black Tea</span><span>€2.80</span></div>
+          <div class="menu-dark-item"><span>Green Tea</span><span>€2.80</span></div>
+          <div class="menu-dark-item"><span>Chamomile</span><span>€3.00</span></div>
+          <div class="menu-dark-item"><span>Peppermint</span><span>€3.00</span></div>
+          <div class="menu-dark-item"><span>Earl Grey</span><span>€3.20</span></div>
+          <div class="menu-dark-item"><span>Matcha Latte</span><span>€4.20</span></div>
+        </div>
+
+        <!-- Cocktails -->
+        <div class="menu-dark-category">
+          <h3>Cocktails</h3>
+
+          <div class="menu-dark-item"><span>Espresso Martini</span><span>€7.50</span></div>
+          <div class="menu-dark-item"><span>Irish Coffee</span><span>€6.50</span></div>
+          <div class="menu-dark-item"><span>Baileys Latte</span><span>€6.00</span></div>
+          <div class="menu-dark-item"><span>Mojito</span><span>€7.00</span></div>
+          <div class="menu-dark-item"><span>Aperol Spritz</span><span>€7.50</span></div>
+          <div class="menu-dark-item"><span>Berry Gin Fizz</span><span>€8.00</span></div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-dark-category">
+          <h3>Desserts</h3>
+
+          <div class="menu-dark-item"><span>Cheesecake</span><span>€4.00</span></div>
+          <div class="menu-dark-item"><span>Chocolate Cake</span><span>€4.50</span></div>
+          <div class="menu-dark-item"><span>Tiramisu</span><span>€4.80</span></div>
+          <div class="menu-dark-item"><span>Croissant</span><span>€2.80</span></div>
+          <div class="menu-dark-item"><span>Donut</span><span>€2.50</span></div>
+          <div class="menu-dark-item"><span>Macarons</span><span>€3.50</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="reservation" id="reservation">
+    <div class="reservation-container">
+
+      <span class="reservation-label">REZERVÁCIA</span>
+      <h2>Rezervujte si svoj stôl</h2>
+      <div class="coffee-line"></div>
+      <p>
+        Doprajte si čas pre seba, stretnutie s priateľmi
+        alebo pracovný rozhovor pri výnimočnej káve.
+      </p>
+      <button class="reservation-btn" id="openReservation">
+        Rezervovať stôl
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Reservation-modal -->
+  <div class="reservation-modal" id="reservationModal">
+
+    <div class="reservation-modal-content">
+
+      <span class="reservation-close" id="closeReservation">&times;</span>
+
+      <h3>Rezervácia stola</h3>
+
+      <form class="reservation-form">
+
+        <input type="text" placeholder="Vaše meno" required>
+
+        <input type="tel" placeholder="Telefón" required>
+
+        <input type="date" required>
+
+        <input type="time" required>
+
+      <div class="people-select">
+
+        <p class="people-label">Počet osôb</p>
+
+        <div class="people-buttons">
+
+          <button type="button" class="people-btn">1</button>
+          <button type="button" class="people-btn">2</button>
+          <button type="button" class="people-btn">3</button>
+          <button type="button" class="people-btn">4</button>
+          <button type="button" class="people-btn">5+</button>
+
+        </div>
+
+        <input type="hidden" name="people" id="peopleInput" required>
+
+      </div>
+
+        <textarea rows="3" placeholder="Poznámka (voliteľné)"></textarea>
+
+        <button type="submit" class="btn-primary">
+          Potvrdiť rezerváciu
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- Contacts section -->
+   
+  <section class="contacts" id="contacts">
+    <div class="contacts-container">
+      <div class="contacts-bloc">
+        <a href="#" class="contacts-logo">
+          <span class="contacts-logo-text"><span>Zlatá</span> Káva</span>
+        </a>
+        <div class="contacts-header">
+          <h2>Kontaktujte nás</h2>
+          <div class="coffee-line"></div>
+          <p>Radi vás privítame v našej kaviarni. Zastavte sa na šálku výnimočnej kávy.</p>
+        </div>
+      </div>
+      <div class="contacts-content">
+
+        <div class="contacts-info">
+          <a href="https://www.google.com/maps?q=48.73146,19.13808" target="_blank" class="find-us-btn"> Ako nás nájsť </a>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Veselá 16, Banská Bystrica</p>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <p>+421 xxx xxx xxx</p>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>info@zlatakava.sk</p>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <p>Pon–Ne: 8:00 – 20:00</p>
+            </div>
+
+            <div class="social-links"> 
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> 
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> 
+              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="contacts-form">
+          <form>
+            <input type="text" placeholder="Vaše meno" required>
+            <input type="email" placeholder="Váš email" required>
+            <textarea placeholder="Vaša správa" rows="4"></textarea>
+            <button type="submit" class="btn-primary">Odoslať správu</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer__section">
+    <div class="section-content">
+      <p class="copyright-text">&copy; 2024 Zlatá Káva</p>
+
+      <p class="policy-text">
+        <a href="#" class="policy-link">Privacy policy</a>
+        <span class="separator">.</span>
+        <a href="#" class="policy-link">Refund policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top">↑</button>
+
+
+  <script src="script.js" defer></script>
+
+
+</body>
+</html>

@@ -274,7 +274,7 @@ header {
   left: 62%;
   width: 850px;
   height: 600px;
-  background: url('/images/phon.png') no-repeat center center;
+  background: url('../images/phon.png') no-repeat center center;
   background-size: contain;
   transform: translate(-50%, -50%);
   opacity: 0.9;

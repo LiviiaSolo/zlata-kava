@@ -206,6 +206,14 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+}
+
+
+
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 20px 30px;
@@ -1695,6 +1703,13 @@ Safari a Edge*/
   color: var(--color-white);
 }
 
+@media (max-width: 1024px) {
+  .contacts .contacts-bloc {
+    padding: 20px 40px;
+  }
+}
+
+
 @media (max-width: 900px) {
   .contacts-bloc {
     flex-direction: column;
@@ -1762,6 +1777,12 @@ Safari a Edge*/
 .footer__section .policy-text .separator {
   margin: 0 8px;
   color: var(--white-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__section .section-content {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 768px) {

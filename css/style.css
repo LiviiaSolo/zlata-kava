@@ -1046,13 +1046,14 @@ header {
   margin-bottom: 40px;
 }
 
-.menu-welcome {
+.menu-welcome  {
   text-align: right;
   padding: 12px 22px;
   border-radius: 40px;
   color: var(--color-gold);
   font-size: 14px;
   letter-spacing: 1px;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 

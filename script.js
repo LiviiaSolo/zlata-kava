@@ -105,23 +105,6 @@ orderClose.addEventListener("click", () => {
 
 
 
-  //  Discount modal (-10% kupón)
-
-const discountBtn = document.querySelector(".discount-btn");
-const discountModal = document.getElementById("discountModal");
-const discountClose = document.querySelector(".discount-close");
-
-discountBtn.addEventListener("click", () => {
-  discountModal.classList.add("active");
-});
-
-discountClose.addEventListener("click", () => {
-  discountModal.classList.remove("active");
-});
-
-
-
-
   //  Close modals When click outside
 
 window.addEventListener("click", (e) => {
@@ -161,3 +144,35 @@ peopleButtons.forEach(btn => {
   });
 
 });
+
+
+//  Discount modal (-10% kupón)
+ 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const discountBtns = document.querySelectorAll(".discount-btn");
+  const discountModal = document.getElementById("discountModal");
+  const discountClose = document.querySelector(".discount-close");
+
+  // Otvoriť modálne okno ľubovoľným tlačidlom
+  discountBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      discountModal.classList.add("active");
+    });
+  });
+
+  // Zatvoriť modálne okno
+  discountClose.addEventListener("click", () => {
+    discountModal.classList.remove("active");
+  });
+
+  // Zatvoriť kliknutím mimo modálneho okna
+  window.addEventListener("click", (e) => {
+    if (e.target === discountModal) {
+      discountModal.classList.remove("active");
+    }
+  });
+
+});
+
+

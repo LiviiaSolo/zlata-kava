@@ -260,9 +260,7 @@ header {
   }
 }
 
-
 /* Hero */
-
 .hero {
   position: relative;
   padding: 160px 80px 120px;
@@ -703,7 +701,6 @@ header {
 
 
 /* Discount-modal */
-
 .discount-modal {
   position: fixed;
   inset: 0;
@@ -822,12 +819,13 @@ header {
   letter-spacing: 1px;
 }
 
-.premium-text {
+.premium-description {
+  max-width: 600px;
+  margin: 0 auto 30px;
   font-size: 16px;
-  color: #5a4b3c;
-  max-width: var(--font-weight-bold);
-  margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.8;
+  color: #8a7f76;
+  text-align: center;
 }
 
 .premium-grid {
@@ -937,7 +935,7 @@ header {
     font-size: 30px;
   }
 
-  .premium-text {
+  .premium-description {
     font-size: 15px;
   }
 
@@ -1232,12 +1230,12 @@ header {
   color: var(--color-text-body);
 }
 
-.reviews-count {
+.reviews-description {
   max-width: 600px;
   margin: 0 auto 30px;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--color-text-muted);
+  color: #8a7f76;
 }
 
 .reviews-container {
@@ -1254,18 +1252,17 @@ header {
 .reviews-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
 }
-
 
 .review-card {
   border-radius: 16px;
-  padding: 25px;
+  padding: 30px;
   max-width: 350px;
   width: 100%;
   color: var(--color-white);
   color: var(--color-text-body);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
@@ -1333,7 +1330,7 @@ header {
     font-size: 28px;
   }
 
-  .reviews-count {
+  .reviews-description {
     font-size: 14px;
     line-height: 1.6;
   }
@@ -1371,8 +1368,6 @@ header {
   }
 }
 
-
-
 /* Reservation Section */
 .reservation {
   padding: 100px 80px;
@@ -1405,12 +1400,12 @@ header {
   letter-spacing: -0.5px;
 }
 
-.reservation p {
+.reservation-description {
   max-width: 600px;
   margin: 0 auto 40px;
   font-size: var(--font-size-n);
   line-height: 1.8;
-  color: var(--color-text-muted);
+  color: #8a7f76;
 }
 
 .reservation-btn {
@@ -1447,13 +1442,12 @@ header {
     font-size: 32px;
   }
 
-  .reservation p {
+  .reservation-description {
     font-size: 15px;
   }
 }
 
 /* Reservation-modal */
-
 .reservation-modal {
   position: fixed;
   inset: 0;
@@ -1670,7 +1664,6 @@ Safari a Edge*/
   }
 }
 
-
 /* Contacts section */
 .contacts {
   background: var(--color-bg-dark);
@@ -1732,12 +1725,13 @@ Safari a Edge*/
 }
 
 .contacts-header p {
-  color: #e6d5cd;
-  font-size: 16px;        
-  max-width: 700px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: var(--font-size-n);
+  line-height: 1.8; 
+  font-weight: 300;      
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px 0;
-  line-height: 1.6;
 }
 
 .contacts-content {
@@ -1953,6 +1947,15 @@ Safari a Edge*/
   .footer__section .section-content {
     padding: 0 40px;
   }
+
+  .copyright-text {
+    font-size: 13px;
+    padding-left: 30px;
+  }
+
+  .policy-text {
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2029,7 +2032,6 @@ Safari a Edge*/
     font-size: 17px;
   }
 }
-
 
 /* Adaptive for all */
 

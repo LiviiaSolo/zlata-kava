@@ -1,79 +1,72 @@
-## ☕ Zlata Kava — Modern Coffee Shop Landing Page
+# ☕ Zlatá Káva — Modern Coffee Shop Landing Page
 
-Elegant, warm and fully responsive landing page for a local coffee shop.
-Designed to showcase signature drinks, café atmosphere, menu highlights and contact information in a clean and inviting way.
+An elegant, warm, and fully responsive website template designed for local coffee shops, bakeries, and cafes. Built with clean code and available in **English** and **Slovak**, this landing page offers a cozy UI, interactive modals, and a commercial-ready structure that is easy to customize.
 
+---
 
-## ✨ Features
+##  Key Features
 
-- Fully responsive design (mobile, tablet, desktop)
+- **Multilingual Support:** Pre-configured in English and Slovak, making it easy to adapt for European or global clients.
+- **Fully Responsive Design:** Seamlessly optimized for mobile, tablet, and desktop screens.
+- **Interactive Modals:** Built-in modal windows for table reservations, coffee ordering, and promotional discounts.
+- **Dynamic UX Elements:** Custom guest selector, phone number pre-fill, and interactive copy-to-clipboard coupon functionality.
+- **Cozy & Premium UI:** Warm color palette, custom typography, and smooth CSS transitions.
+- **High Performance:** Lightweight code without heavy framework dependencies for ultra-fast loading speed.
 
-- Warm and cozy UI style
+---
 
-- Menu section with product cards
+##  Tech Stack
 
-- Hero section with strong visual identity
+- **HTML5** — Semantic markup and accessible structure
+- **CSS3** — Custom styling, Flexbox, Grid, CSS Variables, and Animations
+- **JavaScript (ES6+)** — Clean DOM manipulation and modal state handling
+- **GitHub Pages** — Hosting & deployment
 
-- Contact & location information
+---
 
-- Smooth transitions and subtle animations
+##  What's Included
 
-- Optimized images for fast loading
+- Complete, well-structured source code (`index.html`, `style.css`, `script.js`)
+- Dual-language setup (English & Slovak)
+- Fully functional contact form UI with validation feedback
+- Optimized asset folder structure with image showcase
 
+---
 
+##  Live Demo
 
-## 🛠 Tech Stack
+-  **Live Website:** [https://liviiasolo.github.io/zlata-kava/](https://liviiasolo.github.io/zlata-kava/)
 
-- HTML5
+---
 
-- CSS3
+##  Screenshots
 
-- JavaScript
+### Homepage
+![Homepage](./images/readme/zlata.JPG)
 
-- Flexbox / Grid
+### Mobile Navigation
+![Mobile Menu](./images/readme/menu.JPG)
 
-- GitHub Pages (deployment)
+### Menu & Coffee Collection
+![Collection](./images/readme/kolekcia.JPG)
 
+### Special Offers & Discount Modal
+![Discount](./images/readme/zlava.JPG)
 
-## 👩‍💻 My Role
+---
 
-- Concept & UI Design — complete creation of the website structure, visual style, color palette and layout without using Figma.
+##  Licensing & Commercial Use
 
-- Layout development — building all sections based on my own design with a clear and logical structure.
+This template is available for purchase and full customization. 
 
-- Responsive design — adapting the website for mobile, tablet and large screens.
+- **Customization:** Easily adaptable to any brand identity, color scheme, or target language.
+- **License:** [MIT License](./LICENSE) — permits commercial use, modification, and distribution.
 
-- Animations — adding smooth transitions to create a cozy and pleasant browsing experience.
+---
 
-- Image optimization — preparing and compressing product photos for fast loading.
+##  Author & Contact
 
-- UI adjustments — small design refinements to improve readability and visual harmony.
+**Liviia Solo**  
+*Frontend Developer*
 
-- Deployment preparation — preparing the project for hosting on GitHub Pages.
-
-
-## 🔗 Live Demo
-
-👉 https://liviiasolo.github.io/zlata-kava/
-
-
-## 📸 Screenshots
-
-## 🏠 Homepage
-![Homepage](/images/readmy/zlata.JPG)
-
-## ☕ Mob-Menu Section
-![Mob-Menu ](/images/readmy/menu.JPG)
-
-## 🌸 Collection
-![Collection](/images/readmy/kolekcia.JPG)
-
-## 🌿 Discount
-![Discount](/images/readmy/zlava.JPG)
-
-
-## 👤 Author
-Liviia Solo  
-Frontend Developer
-
-## 🌐 Portfolio: https://liviiasolo.github.io/Portfolio/
+-  **Portfolio:** [liviiasolo.github.io/Portfolio/](https://liviiasolo.github.io/Portfolio/)

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="sk"> 
+<html lang="en"> 
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zlatá Káva</title>
+  <meta name="description" content="Discover quality coffee at Zlatá Káva. 
+  Enjoy our premium blend, artisan desserts, and a unique coffee experience.">
+
+  <title>Zlatá Káva | Boutique Coffee Experience</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +28,13 @@
     <nav class="navbar section__content">
     
       <a href="#" class="nav-logo">
-        <img class="logo-img" src="./images/logo-coffee.png" alt="">
+        <img class="logo-img" src="./images/logo-coffee.png" alt="Zlatá Káva logo">
         <span class="logo-text"><span>Zlatá</span> Káva</span>
       </a>
 
       <ul class="nav__menu">
         <li class="menu-close">
-          <button id="menu-close-button">✕</button>
+          <button id="menu-close-button" aria-label="Close menu">✕</button>
         </li>
       
         <!-- Logo in mobile menu -->
@@ -39,18 +42,16 @@
           <span class="logo-text"><span>Zlatá</span> Káva</span>
         </li>
       
-        <li class="nav__item"><a href="#about" class="nav__link">O nás</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
         <li class="nav__item"><a href="#collection" class="nav__link">Collection</a></li>
         <li class="nav__item"><a href="#reservation" class="nav__link">Reservation</a></li>
         <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
       </ul>
     
-      <button id="menu-open-button" class="menu-open">☰</button>    
+      <button id="menu-open-button" class="menu-open" aria-label="Open menu">☰</button>    
     </nav>
   </header>
-
-  
 
   <!-- Hero section -->
   <section class="hero">
@@ -59,25 +60,24 @@
       <div class="hero-text">
         <p class="hero-subtitle">Boutique Coffee Experience</p>
 
-        <h1>Čas na dobrú kávu</h1>
+        <h1>Time for good coffee</h1>
 
         <p class="hero-description">
-          Objavte chuť kvalitnej kávy v priestore,
-          kde sa spája elegancia a pohoda.
+          Discover the taste of premium coffee in a space
+          where elegance meets comfort.
         </p>
         <div class="hero-buttons">
-          <a href="#menu" class="hero-btn">Pozrieť menu</a>
-          <a href="#reservation" class="hero-btn">Rezervovať stôl</a>
+          <a href="#menu" class="hero-btn">View menu</a>
+          <a href="#reservation" class="hero-btn">Book a table</a>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="images/zlatakavka.png" alt="Šálka kávy Zlatá Káva">
+        <img src="images/zlatakavka.png" alt="Cup of coffee at Zlatá Káva">
       </div>
 
     </div>
   </section>
-
 
   <!-- About us section -->
 
@@ -85,74 +85,65 @@
     <div class="about-container">
 
       <div class="about-image">
-        <img src="images/about-as.png" alt="Interiér Zlatá Káva">
+        <img src="images/about-as.png" alt="Zlatá Káva interior">
       </div>
 
       <div class="about-text">
-        <h2 class="about-title">O nás</h2>
+        <h2 class="about-title">About Us</h2>
         <div class="about-coffee-line"></div>
 
         <p>
-          <span class="brand">Zlatá Káva</span> je miestom pokoja, kde sa vôňa čerstvo praženej kávy spája s 
-          chvíľami, ktoré patria len vám.
+          <span class="brand">Zlatá Káva</span> is a place of peace where the aroma of freshly roasted coffee blends with 
+          moments that belong just to you.
         </p>
 
         <p>
-          Naša výberová káva vzniká z dôkladne vybraných zŕn a precízneho praženia, 
-          aby vám priniesla jedinečný chuťový zážitok.
+          Our specialty coffee is crafted from carefully selected beans and precise roasting 
+          to bring you a unique taste experience.
         </p>
     
-      <div class="about-visit">
-        <p>
-          Pri vašej prvej návšteve vám radi ponúkneme
-          <span>-10% zľavu na celý účet.</span>
-        </p>
-        <button class="about-visit-btn discount-btn">Získajte zľavu</button>
-      </div>
+        <div class="about-visit">
+          <p>
+            On your first visit, we are happy to offer you
+            <span>-10% off your total bill.</span>
+          </p>
+          <button class="about-visit-btn discount-btn">Get discount</button>
+        </div>
       </div>
 
     </div>
   </section> 
 
-
   <!-- Discount-modal -->
-  <div class="discount-modal" id="discountModal">
-  
-    <div class="discount-content">
-  
-      <span class="discount-close">&times;</span>
-  
-      <h3>Vaša zľava -10%</h3>
-  
+  <div class="discount-modal" id="discountModal">  
+    <div class="discount-content">  
+      <span class="discount-close">&times;</span>  
+      <h3>Your -10% discount</h3>  
       <p>
-        Pri vašej prvej návšteve získate
-        <strong>10% zľavu na celý účet.</strong>
-      </p>
-  
+        On your first visit, you will get a
+        <strong>10% discount on your total bill.</strong>
+      </p> 
       <div class="coupon-box">
         <span id="couponCode">ZLATA10</span>
-        <button class="copy-btn" id="copyCoupon">Skopírovať kupón</button>
-      </div>
-  
+        <button class="copy-btn" id="copyCoupon">Copy coupon</button>
+      </div>  
       <p class="coupon-info">
-        Ukážte tento kód pri pokladni.
-      </p>
-  
-    </div>
-  
-  </div>
+        Show this code at the checkout.
+      </p>  
+    </div>  
+  </div> 
 
   <!-- Premium Section -->
   <section class="premium-collection" id="collection">
     <div class="premium-container">
 
       <div class="premium-header">
-        <p class="premium-label">Limitovaná edícia</p>
-        <h2>Naša výnimočná kolekcia</h2>
+        <p class="premium-label">Limited Edition</p>
+        <h2>Our Exceptional Collection</h2>
           <div class="coffee-line"></div>
         <p class="premium-description">
-          Starostlivo vybrané zrná, sezónne kombinácie chutí
-          a výnimočné spracovanie pre tých, ktorí hľadajú viac než len kávu.
+          Carefully selected beans, seasonal flavor combinations,
+          and extraordinary processing for those seeking more than just coffee.
         </p>
       </div>
 
@@ -163,30 +154,30 @@
           <img src="images/kolekcia1.png" alt="House Blend 2026">
           <h3>Spiced Choco Mocha Royale</h3>
           <p>
-            Espresso s horúcou čokoládou, koreninami a jemným nádychom šafranu.
-            Autorská receptúra s luxusným charakterom.
+            Espresso with hot chocolate, spices, and a delicate touch of saffron.
+            A signature recipe with a luxurious character.
           </p>
-          <button class="premium-btn order-btn" data-coffee="Spiced Choco Mocha Royale">Objednať</button>
+          <button class="premium-btn order-btn" data-coffee="Spiced Choco Mocha Royale">Order</button>
         </div>
 
         <div class="premium-item">
           <span class="premium-badge">Exclusive</span>
           <img src="images/kolekcia2.png" alt="Barrel Aged Espresso">
           <h3>Barrel Aged Espresso</h3>
-          <p>Prémiové espresso s jemným tónom dubového dreva a tmavej čokolády. 
-            Hlboká aróma, výrazný charakter, elegantná textúra a dlhotrvajúca chuť.
+          <p>Premium espresso with subtle oak wood and dark chocolate notes.
+            Deep aroma, distinct character, elegant texture, and a long-lasting finish.
           </p>
-          <button class="premium-btn order-btn" data-coffee="Barrel Aged Espresso">Objednať</button>
+          <button class="premium-btn order-btn" data-coffee="Barrel Aged Espresso">Order</button>
         </div>
 
-        <div class="premium-item ">
+        <div class="premium-item">
           <span class="premium-badge">Signature</span>
           <img src="images/kolekcia3.png" alt="Honey Process Filter">
           <h3>Velvet Vanilla Nitro Latte</h3>
-          <p>Krémová studená káva s jemnou vanilkovou príchuťou a azotom,
-            ktorý vytvára barхатistú penu. Jedinečný zážitok, ktorý nenájdete nikde inde.
+          <p>Creamy cold coffee infused with smooth vanilla and nitrogen,
+            creating a velvety foam. A unique experience you won't find anywhere else.
           </p>
-          <button class="premium-btn order-btn" data-coffee="Velvet Vanilla Nitro Latte">Objednať</button>
+          <button class="premium-btn order-btn" data-coffee="Velvet Vanilla Nitro Latte">Order</button>
         </div>
 
       </div>
@@ -194,25 +185,42 @@
     </div>
   </section>
 
+
   <!-- Order-modal -->
   <div class="order-modal" id="orderModal">
     <div class="order-modal-content">
-  
       <span class="order-close">&times;</span>
-  
-      <h2>Objednávka kávy</h2>
-  
-      <form class="order-form">
-        <input type="text" id="coffeeName" readonly>
-  
-        <input type="text" placeholder="Vaše meno" required>
-        <input type="tel" placeholder="Telefón" required>
-  
-        <textarea rows="4" placeholder="Poznámka k objednávke"></textarea>
-  
-        <button type="submit" class="btn-primary">Odoslať objednávku</button>
+      <h2>Coffee Order</h2>
+      <form class="order-form" id="orderForm">
+        <div class="order-success-message" id="orderSuccessMessage" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <p>Thank you! Your order has been successfully sent.</p>
+        </div>
+        <div class="form-fields" id="orderFormFields">
+          
+          <div class="form-group">
+            <label for="coffeeName">Selected Coffee:</label>
+            <input type="text" id="coffeeName" readonly>
+          </div>
+
+          <div class="form-group">
+            <label for="userName">Your Full Name:</label>
+            <input type="text" id="userName" placeholder="e.g. John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="userPhone">Phone Number:</label>
+            <input type="tel" id="userPhone" placeholder="+421 900 000 000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="orderNote">Order Note / Special Requests:</label>
+            <textarea id="orderNote" rows="3" placeholder="e.g. Oat milk, extra sugar, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" id="orderSubmitBtn">Submit order</button>
+        </div>
       </form>
-  
     </div>
   </div>
 
@@ -221,16 +229,15 @@
     <div class="menu-dark-container">
 
       <div class="menu-header">
-        <h2 class="menu-dark-title">Naše menu</h2>
+        <h2 class="menu-dark-title">Our Menu</h2>
         
         <div class="menu-welcome discount-btn">
           <span>-10%</span>
-          <p>na prvú návštevu</p>
+          <p>on first visit</p>
         </div>
       </div>
 
       <div class="menu-dark-columns">
-        
 
         <!-- Coffee -->
         <div class="menu-dark-category">
@@ -289,69 +296,69 @@
   <!-- Section reviews -->
 
   <section class="reviews">
-  <span class="reservation-label">Reviews</span> 
-  <h2>Čo hovoria naši zákazníci</h2>
-  <div class="coffee-line"></div>
-   
-<div class="reviews-container">
+    <span class="reservation-label">Reviews</span> 
+    <h2>What our customers say</h2>
+    <div class="coffee-line"></div>
+     
+    <div class="reviews-container">
 
-  <p class="reviews-description">
-    Skutočné skúsenosti zákazníkov, ktorí si zamilovali našu kávu, 
-    jedinečnú atmosféru a radi sa k nám vracajú
-  </p>
+      <p class="reviews-description">
+        Real experiences from guests who fell in love with our coffee,
+        unique atmosphere, and keep coming back
+      </p>
 
-  <article class="reviews-content">
+      <article class="reviews-content">
 
-    <div class="review-card">
-      <div class="review-header">
-        <img src="images/user1.jpg" alt="Martina">
-        <div>
-          <h4>Martina K.</h4>
-          <span>★★★★★</span>
+        <div class="review-card">
+          <div class="review-header">
+            <img src="images/user1.jpg" alt="Martina">
+            <div>
+              <h4>Martina K.</h4>
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <p>"Best coffee in town! Amazing atmosphere and very friendly staff."</p>
         </div>
-      </div>
-      <p>"Najlepšia káva v meste! Úžasná atmosféra a veľmi milý personál."</p>
-    </div>
 
-    <div class="review-card">
-      <div class="review-header">
-        <img src="images/user2.jpg" alt="Peter">
-        <div>
-          <h4>Peter M.</h4>
-          <span>★★★★★</span>
+        <div class="review-card">
+          <div class="review-header">
+            <img src="images/user2.jpg" alt="Peter">
+            <div>
+              <h4>Peter M.</h4>
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <p>"Perfect place to meet with friends. Top coffee and desserts!"</p>
         </div>
-      </div>
-      <p>"Perfektné miesto na stretnutie s priateľmi. Káva aj dezerty top!"</p>
-    </div>
 
-    <div class="review-card">
-      <div class="review-header">
-        <img src="images/user3.jpg" alt="Lucia">
-        <div>
-          <h4>Lucia S.</h4>
-          <span>★★★★★</span>
+        <div class="review-card">
+          <div class="review-header">
+            <img src="images/user3.jpg" alt="Lucia">
+            <div>
+              <h4>Lucia S.</h4>
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <p>"I love this place. I always enjoy coming back for great coffee."</p>
         </div>
-      </div>
-      <p>"Milujem tento podnik. Vždy sa sem rada vraciam pre skvelú kávu."</p>
-    </div>
 
-  </article>
-</div>
-</section>
+      </article>
+    </div>
+  </section>
 
   <!-- Reservation Section -->
   <section class="reservation" id="reservation">
     <div class="reservation-container">
 
-      <span class="reservation-label">REZERVÁCIA</span>
-      <h2>Rezervujte si svoj stôl</h2>
+      <span class="reservation-label">RESERVATION</span>
+      <h2>Book your table</h2>
       <div class="coffee-line"></div>
       <p class="reservation-description">
-        Doprajte si čas pre seba, stretnutie s priateľmi
-        alebo pracovný rozhovor pri výnimočnej káve.
+        Treat yourself to some personal time, a hangout with friends,
+        or a business meeting over exceptional coffee.
       </p>
       <button class="reservation-btn" id="openReservation">
-        Rezervovať stôl
+        Book a table
       </button>
 
     </div>
@@ -359,55 +366,61 @@
 
   <!-- Reservation-modal -->
   <div class="reservation-modal" id="reservationModal">
-
     <div class="reservation-modal-content">
-
       <span class="reservation-close" id="closeReservation">&times;</span>
-
-      <h3>Rezervácia stola</h3>
-
-      <form class="reservation-form">
-
-        <input type="text" placeholder="Vaše meno" required>
-
-        <input type="tel" placeholder="Telefón" required>
-
-        <input type="date" required>
-
-        <input type="time" required>
-
-      <div class="people-select">
-
-        <p class="people-label">Počet osôb</p>
-
-        <div class="people-buttons">
-
-          <button type="button" class="people-btn">1</button>
-          <button type="button" class="people-btn">2</button>
-          <button type="button" class="people-btn">3</button>
-          <button type="button" class="people-btn">4</button>
-          <button type="button" class="people-btn">5+</button>
-
+      <h3>Table Reservation</h3>
+      <form class="reservation-form" id="reservationForm">
+        <div class="reservation-success-message" id="reservationSuccessMessage" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <p>Thank you! Your table reservation has been confirmed.</p>
         </div>
-
-        <input type="hidden" name="people" id="peopleInput" required>
-
-      </div>
-
-        <textarea rows="3" placeholder="Poznámka (voliteľné)"></textarea>
-
-        <button type="submit" class="btn-primary">
-          Potvrdiť rezerváciu
-        </button>
-
+        <div class="form-fields" id="reservationFormFields">
+          <input 
+            type="text" 
+            id="resName" 
+            placeholder="Your name" 
+            required
+          >
+          <input 
+            type="tel" 
+            id="resPhone" 
+            placeholder="Phone number (+421 900 000 000)" 
+            pattern="^\+?[0-9\s\-\(\)]{7,15}$"
+            title="Please enter a valid phone number, e.g. +421 900 000 000"
+            required
+          >
+          <input 
+            type="date" 
+            id="resDate" 
+            required
+          >
+          <input 
+            type="time" 
+            id="resTime" 
+            required
+          >
+          <div class="people-select">
+            <p class="people-label">Number of guests</p>
+            <div class="people-buttons">
+              <button type="button" class="people-btn active">1</button>
+              <button type="button" class="people-btn">2</button>
+              <button type="button" class="people-btn">3</button>
+              <button type="button" class="people-btn">4</button>
+              <button type="button" class="people-btn">5+</button>
+            </div>
+            <input type="hidden" name="people" id="peopleInput" value="1" required>
+          </div>
+          <textarea id="resNote" rows="3" placeholder="Note (optional)"></textarea>
+          <button type="submit" class="btn-primary">
+            Confirm reservation
+          </button>
+        </div>
       </form>
-
     </div>
-
   </div>
 
   <!-- Contacts section -->
-   
+     
   <section class="contacts" id="contacts">
     <div class="contacts-container">
       <div class="contacts-bloc">
@@ -415,16 +428,16 @@
           <span class="contacts-logo-text"><span>Zlatá</span> Káva</span>
         </a>
         <div class="contacts-header">
-          <h2>Kontaktujte nás</h2>
+          <h2>Contact Us</h2>
           <div class="coffee-line"></div>
-          <p>Tešíme sa na vašu návštevu. Príďte si vychutnať príjemnú atmosféru a kvalitnú kávu, 
-            na ktorú sa budete radi vracať.</p>
+          <p>We look forward to your visit. Come enjoy a pleasant atmosphere and quality coffee 
+            you'll love returning to.</p>
         </div>
       </div>
       <div class="contacts-content">
 
         <div class="contacts-info">
-          <a href="https://www.google.com/maps?q=48.73146,19.13808" target="_blank" class="find-us-btn"> Ako nás nájsť </a>
+          <a href="https://www.google.com/maps?q=48.73146,19.13808" target="_blank" class="find-us-btn"> How to find us </a>
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <p>Veselá 16, Banská Bystrica</p>
@@ -442,24 +455,30 @@
 
             <div class="contact-item">
               <i class="fas fa-clock"></i>
-              <p>Pon–Ne: 8:00 – 20:00</p>
+              <p>Mon-Sun: 8:00 AM - 8:00 PM</p>
             </div>
 
             <div class="social-links"> 
-              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> 
-              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> 
-              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> 
+              <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a> 
+              <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
 
         <div class="contacts-form">
-          <form>
-            <input type="text" placeholder="Vaše meno" required>
-            <input type="email" placeholder="Váš email" required>
-            <textarea placeholder="Vaša správa" rows="4"></textarea>
-            <button type="submit" class="btn-primary">Odoslať správu</button>
-          </form>
+
+        <div class="contacts-success-message" id="contactsSuccessMessage" style="display: none;">
+          <p>Thank you! Your message has been sent successfully.</p>
         </div>
+
+        <form id="contactsForm">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea placeholder="Your message" rows="4" required></textarea>
+          <button type="submit" class="btn-primary">Send message</button>
+        </form>
+
+      </div>
 
       </div>
     </div>
@@ -471,18 +490,16 @@
       <p class="copyright-text">&copy; 2026 Zlatá Káva</p>
 
       <p class="policy-text">
-        <a href="#" class="policy-link">Privacy policy</a>
+        <a href="#" class="policy-link">Privacy Policy</a>
         <span class="separator">.</span>
-        <a href="#" class="policy-link">Refund policy</a>
+        <a href="#" class="policy-link">Refund Policy</a>
       </p>
     </div>
   </footer>
 
-  <button id="scrollTopBtn" class="scroll-top">↑</button>
-
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Back to top">↑</button>
 
   <script src="script.js" defer></script>
-
 
 </body>
 </html>
